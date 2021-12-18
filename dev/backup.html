@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTFOLIO</title>
+    <link rel="shortcut icon" href="../resources/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../resources/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../resources/css/common.css">
+    <link rel="stylesheet" href="../resources/css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer type="text/javascript" src="../resources/js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header-content">
+                <div class="logo-wrap">
+                    <h1 onclick="location.href='../index.html'"><img src="../resources/img/common/logo_orange.png"></h1>
+                </div>
+                <nav>
+                    <ul class="gnb-wrap">
+                        <li><a href="../dev/lolable.html">LOLABLE.GG</a></li>
+                        <li><a href="../dev/eatsmap.html">EatsMap</a></li>
+                        <li><a href="../dev/futsal-on.html">풋살ON</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class="project-wrap">
+                <div class="project-head">
+                    <div class="menu-bar"><span></span><span></span></div>
+                    <div class="url-bar"> https://wwww.eatsmap.com</div>
+                    <div class="menu-bar"><span></span></div>
+                </div>
+                <div class="project-area">
+                    <div class='btn-arrow'>
+                        <i class="fas fa-angle-double-left arrow-left"></i>
+                        <i class="fas fa-angle-double-right arrow-right"></i>
+                    </div>
+                    <ul class="p-slide">
+                        <li>
+                            <div class="prev">
+                                <div class="p-logo"><img src="../resources/img/dev/eatsmap-logo.png"></div>
+                                <dl class="p-content">
+                                    <dt>프로젝트명</dt>
+                                    <dd>EatsMap(잇츠맵)</dd>
+                                    <dt>프로젝트 기간</dt>
+                                    <dd>2021년 11월 09일 ~ 2021년 12월 07일 (28 일)</dd>
+                                    <dt>프로젝트 설명</dt>
+                                    <dd>
+                                        허위 광고가 아닌 진짜 맛집을 찾아내는 서비스!<br>
+                                        허위 맛집 광고에 지친 사용자들이 나만의 맛집 경험을 직접 기록하고 나만의 맛집 지도(잇츠맵)를 만들어 친구들과 공유하거나<br>
+                                        마음에 드는 유저를 팔로우하여 원하는 맛집 지도를 그릴 수 있는 웹사이트입니다.<br>
+                                        사용자가 즐겨 사용하는 해시태그를 기반으로 "사용자 맞춤 맛집"을 추천하거나 사용자의 위치 기반의 맛집 리뷰를 추천하는 기능도 제공하고 있습니다.
+                                    </dd>
+                                    <dt>개발환경</dt>
+                                    <dd>
+                                        <span>Language</span> Java <em>/</em> JSP <em>/</em> JavaScript <em>/</em> HTML <em>/</em> CSS<br>
+                                        <span>Database</span> MongoDB<br>
+                                        <span>Framework</span> Spring<br>
+                                        <span>Library & API</span> KAKAO Maps API <em>/</em> HTML5 geolocation API <em>/</em> FullCalendar API <em>/</em> Javax mail<br>
+                                        <span>Others</span> Firebase
+                                    </dd>
+                                    <dt>소스코드</dt>
+                                    <dd><a target="_blank" href="https://github.com/yoonzam/KH-FINAL">Git Hub Repository 바로가기 <i class="fas fa-arrow-circle-right"></i></a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img">
+                                <img src="../resources/img/dev/lolable-01.png">
+                            </div>
+                            <div class="p-explanation">
+                                <span class="number">[1/5]</span>
+                                <span>
+                                    사용자가 가장 많이 사용한 해시태그를 분석하여 해당 해시태그가 포함된 "사용자 맞춤 맛집"을 추천합니다.<br>
+                                    또한 HTML Geolocation API를 사용하여 사용자의 위치를 기준으로 반경 10KM 내의 맛집 리뷰를 추천하고 있습니다.
+                                </span>
+                                <span>
+                                    <a class="btn-code" data-code-idx="1">CODE</a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img">
+                                <img src="../resources/img/dev/eatsmap-02-timeline.jpg">
+                            </div>
+                            <div class="p-explanation">
+                                <span class="number">[2/5]</span>
+                                <span>
+                                    사용자가 가장 많이 사용한 해시태그를 분석하여 해당 해시태그가 포함된 "사용자 맞춤 맛집"을 추천합니다.<br>
+                                    또한 HTML Geolocation API를 사용하여 사용자의 위치를 기준으로 반경 10KM 내의 맛집 리뷰를 추천하고 있습니다.
+                                </span>
+                                <span>
+                                    <a class="btn-code" data-code-idx="1">CODE</a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="p-code code1">
+                        <pre class="javascript" data-ke-language="javascript" data-ke-type="codeblock">
+<code>
+<span class="var">const</span> regEmail = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+<span class="var">const</span> regPw = /^.*(?=^.{8,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
+
+<span class="var">let</span> flagEmail = false, flagPw = false, flagCp = false, flagTerms = false;
+
+$('#email').keyup(()=>{
+<span class="var">let</span> email = $('#email').val();
+if(!email){
+$('.check-email').html('이메일을 입력해주세요!');
+flagEmail = false;
+return;
+}
+if(!regEmail.test(email)){
+$('.check-email').html('정확한 이메일 양식으로 입력해주세요!');
+flagEmail = false;
+return;
+}
+$('.check-email').html('');
+flagEmail = true;
+});
+</code>
+                        </pre>
+                        <a class="close-btn"><i class="far fa-times-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <span class="copy">ALPACA's PORTFOLIO. ALL RIGHTS RESERVED.</span>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        (function(){
+            let cnt = 0;
+            let slideCnt = $(".p-slide")[0].childElementCount;
+            
+            $(".arrow-left").hide();
+            
+            $(".arrow-right").click(()=>{
+                cnt++;
+                $(".arrow-left").show();
+                if(cnt == slideCnt-1) $(".arrow-right").hide();
+                moveSlide(cnt);
+            });
+
+            $(".arrow-left").click(()=>{
+                cnt--;
+                $(".arrow-right").show();
+                if(cnt == 0) $(".arrow-left").hide();
+                moveSlide(cnt);
+            });
+
+            let moveSlide = function(cnt){
+                let slideWidth = $('.p-slide').width()/slideCnt;
+                $(".p-slide").css('transform','translateX('+cnt*-slideWidth+'px)');
+                $(".p-slide").css('transitionDuration','0.5s');
+            }
+            
+            // CODE 제어
+            $('.btn-code').click((e)=>{
+                $('.p-code.code'+e.target.dataset.codeIdx).fadeIn();
+            })
+            $('.close-btn i').click(()=>{
+                $('.p-code').fadeOut();
+            })
+            
+        }());
+
+        
+    </script>
+</body>
+</html>

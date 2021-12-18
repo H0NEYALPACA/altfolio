@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTFOLIO</title>
+    <link rel="shortcut icon" href="../resources/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../resources/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../resources/css/common.css">
+    <link rel="stylesheet" href="../resources/css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer type="text/javascript" src="../resources/js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="header-content">
+                <div class="logo-wrap">
+                    <h1 onclick="location.href='../index.html'"><img src="../resources/img/common/logo_orange.png"></h1>
+                </div>
+                <nav>
+                    <ul class="gnb-wrap">
+                        <li><a href="../dev/eatsmap.html">EatsMap</a></li>
+                        <li><a href="../dev/lolable.html">LOLABLE.GG</a></li>
+                        <!--li><a href="../dev/futsal-on.html">풋살ON</a></li-->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class="project-wrap">
+                <div class="project-head">
+                    <div class="menu-bar"><span></span><span></span></div>
+                    <div class="url-bar"> https://wwww.lolable.gg </div>
+                    <div class="menu-bar"><span></span></div>
+                </div>
+                <div class="project-area">
+                    <div class='btn-arrow'>
+                        <i class="fas fa-angle-double-left arrow-left"></i>
+                        <i class="fas fa-angle-double-right arrow-right"></i>
+                    </div>
+                    <ul class="p-slide black">
+                        <li>
+                            <div class="prev">
+                                <div class="p-logo l"><img src="../resources/img/dev/lolable-logo.png"></div>
+                                <dl class="p-content">
+                                    <dt>프로젝트명</dt>
+                                    <dd>LOLABLE(롤러블)</dd>
+                                    <dt>수행기간</dt>
+                                    <dd>2021년 10월 07일 ~ 2021년 12월 17일</dd>
+                                    <dt>개발목표</dt>
+                                    <dd>리그오브레전드 게임 내에서 사용자 설정 게임 시스템을 활용해 사람들을 모아 서로 시합하는 것을 '내전'이라고 합니다.<br>
+                                        LOLABLE은 Riotgames API를 통해 사용자의 리그오브레전드 인게임 정보(티어, 주챔피언)를 바탕으로 나와 맞는 팀을 구성하고,<br>
+                                        비슷한 실력의 상대를 찾아 내전을 쉽고 편하게 매칭할 수 있도록 도와주는 웹 사이트입니다.</dd>
+                                    <dt>개발환경</dt>
+                                    <dd>
+                                        <span>Language</span> Java, JavaScript, HTML, CSS<br>
+                                        <span>Database</span> Maria DB<br>
+                                        <span>Framework</span> Spring, MyBatis<br>
+                                        <span>Library & API</span> Riotgames API, Javax mail
+                                    </dd>
+                                    <dt>소스코드</dt>
+                                    <dd><a target="_blank" href="https://github.com/h0neyalpaca/lolable.gg">Git Hub Repository 바로가기 <i class="fas fa-arrow-circle-right"></i></a></dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img">
+                                <img src="../resources/img/dev/lolable-01.png">
+                                <div class="p-explanation">
+                                    <span class="number">[1/12]</span>
+                                    <span>
+                                        이메일, 비밀번호 입력 후 이메일로 전달된 인증번호를 통해 회원가입할 수 있습니다.<br>
+                                        정규표현식을 사용하여 정확한 회원가입 양식으로 입력할 경우에만 다음 단계로 넘어갈 수 있으며 
+                                        인증시 랜덤으로 생성한 UUID 값을 이메일로 전달하여 UUID 값과 Session에 저장된 값을 통해 회원가입을 처리합니다.<br>
+                                        회원가입시 비밀번호는 Password Encoder 를 거쳐 암호화된 비밀번호가 데이터베이스에 저장됩니다.
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img">
+                                <img src="../resources/img/dev/lolable-02.png">
+                                <div class="p-explanation">
+                                    <span class="number">[2/12]</span>
+                                    <span>
+                                        이메일과 비밀번호를 입력하여 로그인합니다.<br>
+                                        사용자가 입력한 비밀번호와 데이터베이스에 저장되어 있는 암호화된 비밀번호를 Password Encoder 로 매치하여 일치할 경우 로그인 성공 메시지를 띄웁니다.
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img">
+                                <img src="../resources/img/dev/lolable-03.png">
+                                <div class="p-explanation">
+                                    <span class="number">[3/12]</span>
+                                    <span>
+                                        팀 활동을 하기 위해서는 소환사 정보가 필요하며 마이리그에서 소환사를 등록할 수 있습니다.<br>
+                                        소환사명을 등록하면 Riotgames API를 사용하여 소환사가 존재하는 지 확인 후 소환사가 존재하면 소환사의 리그 정보를 조회하여 등록합니다.
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img">
+                                <img src="../resources/img/dev/lolable-04.png">
+                                <div class="p-explanation">
+                                    <span class="number">[4/12]</span>
+                                    <span>
+                                        모집중인 포지션이 있는 팀은 아군모집 페이지에 노출됩니다. 자신이 만든 팀은 노출되지 않습니다.<br>
+                                        팀 평균티어로 검색, 포지션으로 검색 가능하며 원하는 포지션을 선택한 후 신청하기 버튼을 클릭하여 팀에 지원할 수 있습니다.
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img">
+                                <img src="../resources/img/dev/lolable-05.png">
+                                <div class="p-explanation">
+                                    <span class="number">[5/12]</span>
+                                    <span>
+                                        아군 모집글 작성시 ajax로 팀명을 검증하여 사용 가능 여부를 판단하며 
+                                        사용자 편의를 위해 라인업 입력시 작성중인 키워드가 포함된 소환사 추천하는 기능을 제공하고 있습니다.<br>
+                                        아군 모집글을 등록하면 자동으로 팀이 생성되고 라인업이 모두 완성되면 게시글은 자동으로 상대찾기로 이동됩니다.
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img">
+                                <img src="../resources/img/dev/lolable-06.png">
+                                <div class="p-explanation">
+                                    <span class="number">[6/12]</span>
+                                    <span>
+                                        신청한 팀은 나의 리그 > 신청목록에서 확인할 수 있습니다.<br>
+                                        내가 신청한 라인은 노란색으로 표시되며 신청 취소시 신청 기록이 삭제됩니다.
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img">
+                                <img src="../resources/img/dev/lolable-07.png">
+                                <div class="p-explanation">
+                                    <span class="number">[7/12]</span>
+                                    <span>
+                                        팀 라인별 현황에서 소환사가 존재하는 라인(빨간불이 들어온 라인)을 클릭하면 해당 라인에 등록된 소환사 정보를 확인할 수 있습니다.<br>
+                                        ajax를 통ㅎ애 비동기로 소환사 정보를 조회하고 필요한 정보만을 가공하여 화면으로 전달하고 있습니다.
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img">
+                                <img src="../resources/img/dev/lolable-08.png">
+                                <div class="p-explanation">
+                                    <span class="number">[8/12]</span>
+                                    <span>
+                                        팀장(최초 팀 생성자)이라면 나의 팀 페이지에서 팀을 수정하거나 삭제할 수 있습니다.<br>
+                                        아군 지원자를 확인하고 수락 혹은 거절할 수 있고, 수락할 경우 해당 소환사가 팀원으로 추가됩니다.
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img">
+                                <img src="../resources/img/dev/lolable-09.png">
+                                <div class="p-explanation">
+                                    <span class="number">[9/12]</span>
+                                    <span>
+                                        롤러블 사이트 이용자를 대상으로 티어 랭킹과 경기 랭킹을 제공합니다.<br>
+                                        티어 랭킹은 등록된 소환사를 티어 > 랭크 > 리그포인트 순서로 정렬하여 가장 높은 5명의 소환사를 조회합니다.<br>
+                                        경기 랭킹은 블루팀과 레드팀을 통틀어 합계가 높은 5개의 팀을 조회합니다.
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img">
+                                <img src="../resources/img/dev/lolable-10.png">
+                                <div class="p-explanation">
+                                    <span class="number">[10/12]</span>
+                                    <span>
+                                        문의 게시판에서는 문의를 등록, 답변 확인 및 검색 기능을 제공합니다.<br>
+                                        공개 문의는 다른 회원도 열람 가능하지만 비공개 문의는 '비공개 글입니다.' 로 표시되며 자신만 열람 가능합니다.<br>
+                                        사용자는 내가 작성한 글을 조회할 수 있고, 관리자는 답변 대기 글을 조회할 수 있습니다.
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img">
+                                <img src="../resources/img/dev/lolable-11.png">
+                                <div class="p-explanation">
+                                    <span class="number">[11/12]</span>
+                                    <span>
+                                        문의 등록시 문의 유형, 공개 여부 선택 및 사진 첨부 가능합니다.<br>
+                                        공개 여부는 전체 공개가 기본이며 비공개 선택시 자신만 열람할 수 있습니다.<br>
+                                        사진 첨부는 이미지 파일만 첨부 가능하고 여러 사진을 총 3장까지 업로드할 수 있습니다.
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="p-img">
+                                <img src="../resources/img/dev/lolable-12.png">
+                                <div class="p-explanation">
+                                    <span class="number">[12/12]</span>
+                                    <span>
+                                        관리자 등급을 부여한 회원은 문의 게시글에 답변을 작성할 수 있습니다.<br>
+                                        관리자는 답변을 등록, 수정, 삭제할 수 있지만 일반회원은 읽기만 가능합니다.
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <span class="copy">ALPACA's PORTFOLIO. ALL RIGHTS RESERVED.</span>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        (function(){
+            let cnt = 0;
+            let slideCnt = $(".p-slide")[0].childElementCount;
+            
+            $(".arrow-left").hide();
+            
+            $(".arrow-right").click(()=>{
+                cnt++;
+                $(".arrow-left").show();
+                if(cnt == slideCnt-1) $(".arrow-right").hide();
+                moveSlide(cnt);
+            });
+
+            $(".arrow-left").click(()=>{
+                cnt--;
+                $(".arrow-right").show();
+                if(cnt == 0) $(".arrow-left").hide();
+                moveSlide(cnt);
+            });
+
+            let moveSlide = function(cnt){
+                let slideWidth = $('.p-slide').width()/slideCnt;
+                $(".p-slide").css('transform','translateX('+cnt*-slideWidth+'px)');
+                $(".p-slide").css('transitionDuration','0.5s');
+            }
+            
+            // CODE 제어
+            $('.btn-code').click((e)=>{
+                $('.p-code.code'+e.target.dataset.codeIdx).fadeIn();
+            })
+            $('.close-btn i').click(()=>{
+                $('.p-code').fadeOut();
+            })
+            
+        }());
+
+        
+    </script>
+</body>
+</html>
