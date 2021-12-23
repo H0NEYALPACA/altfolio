@@ -10,13 +10,15 @@
 .project-area .p-slide{display:flex; align-items: center;}
 .project-area .p-slide > li{width:calc(100vw - 62px); position:relative; max-width:1340px; position: relative;}
 .project-area .p-slide > li .prev{padding:30px 100px;}
-.project-area .p-slide > li .prev .p-title{text-align: center; color: #fff; margin-bottom:20px; font-size: 1.5em;}
 .project-area .p-slide > li .prev .p-logo{text-align: center;}
 .project-area .p-slide > li .prev .p-logo img{height:70px;}
 .project-area .p-slide > li .prev .p-logo.e img{height:50px;}
 .project-area .p-slide > li .prev .p-logo.l img{height:60px;}
 .project-area .p-slide > li .p-content{letter-spacing: 1px;}
+.project-area .p-slide > li .p-content.code * {text-align: center;}
 .project-area .p-slide > li .p-content dt{margin-top:17px; font-size:17px; color:var(--color-blue) !important;}
+.project-area .p-slide > li .p-content.code dt{margin-top:23px; margin-bottom: 5px;}
+.project-area .p-slide > li .p-content.code dt:first-child{margin-top: 0px;}
 .project-area .p-slide > li .p-content dd{color:#ddd;}
 .project-area .p-slide > li .p-content dd span{color:#fff; display: inline-block; min-width:120px; color:#aeb0b7;}
 .project-area .p-slide > li .p-content dd span.link{min-width: auto;}

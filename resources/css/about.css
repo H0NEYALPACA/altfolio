@@ -86,9 +86,9 @@
 .projects ul > li:last-child{margin-right:0%;}
 .projects ul > li * {color:#fff;}
 .projects ul > li > div{width:100%; height:100%; transition-duration: 0.5s; background-size: cover;}
-.projects ul > li:first-child > div{background: url(../img/about/project-lolable.png) no-repeat center center;}
-.projects ul > li:nth-child(2) > div{background: url(../img/about/project-eatsmap.png) no-repeat center center;}
-.projects ul > li:last-child > div{background: url(../img/about/project-futsal.png) no-repeat center center;}
+.projects ul > li:first-child > div{background: url(../img/about/project-eatsmap.png) no-repeat center center;}
+.projects ul > li:nth-child(2) > div{background: url(../img/about/project-lolable.png) no-repeat center center;}
+/*.projects ul > li:last-child > div{background: url(../img/about/project-futsal.png) no-repeat center center;}*/
 .projects ul > li:hover > div{transform:scale(1.05, 1.05);}
 .projects ul > li > p{position:absolute; top:0; display:flex; flex-direction: column; width:100%; height:100%; justify-content : center; align-items:center; font-weight: 500;}
 .projects ul > li > p strong{font-size:20px;}
