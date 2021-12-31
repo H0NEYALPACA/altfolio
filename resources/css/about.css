@@ -74,9 +74,9 @@
 .skills .skills-level > li > div.level span.lv6 {width:60%;}
 .skills .skills-level > li > div.level span.lv5 {width:50%;}
 .skills .skills-level > li > div.level span.lv4 {width:40%;}
-.skills .skills-level > li > div.level span.lv3 {width:30%;}
-.skills .skills-level > li > div.level span.lv2 {width:20%;}
-.skills .skills-level > li > div.level span.lv1 {width:10%;}
+.skills .skills-level > li > div.level span.lv3 {width:30%; background-color:#f8e1a7;}
+.skills .skills-level > li > div.level span.lv2 {width:20%; background-color:#f8e1a7;}
+.skills .skills-level > li > div.level span.lv1 {width:10%; background-color:#f8e1a7;}
 
 .skills, .projects{display:block;text-align:center;}
 .skills .decoline, .projects .decoline{margin:20px auto;}
